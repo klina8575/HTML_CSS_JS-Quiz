@@ -6,9 +6,9 @@ $.ajax({
    dataType: 'json',
    success: function (data) {
       console.log(data)
-      console.log(`온도: ${data.main.temp}`)
-      console.log(`풍속: ${data.wind.speed}`)
-      console.log(`상태: ${data.weather[0].description}`)
+      document.write(`온도: ${data.main.temp} <br>`)
+      document.write(`풍속: ${data.wind.speed} <br>`)
+      document.write(`상태: ${data.weather[0].description} <br>`)
    },
    error: function (request, status, error) {
       //응답 에러시 처리 작업
